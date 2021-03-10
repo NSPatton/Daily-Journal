@@ -19,10 +19,9 @@ export const EntryListComponent = () => {
     }
 
     for (const entry of entries) {
-        /*
-            Invoke the component that returns an
-            HTML representation of a single entry
-        */
+
+        
+       journalHTML = JournalEntryComponent(entry);
         entryLog.innerHTML += journalHTML
     }
 }
